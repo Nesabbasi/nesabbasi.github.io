@@ -1,16 +1,38 @@
 ---
-layout: archive
-title: "Research"
 permalink: /research/
+title: "Research"
 author_profile: true
 ---
 
-{% if site.talkmap_link == true %}
+<style>   
+table {
+  border-collapse: collapse;
+  border: none;
+  font-size: medium;
+  margin-top: 0px;
+}
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+td, th {
+  border: none;
+  padding: 0;
+}
 
-{% endif %}
+h2 {
+  margin-bottom: 0px;
+}
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+figure img {
+  margin-bottom: 0.5px;
+}
+</style>
+
+{% for research in site.research %}
+    <h2>{{ research.title }}</h2>
+    <table border="0">
+        <tr>
+            <td align="left">{{ research.description_left }}</td>
+            <td align="right">{{ research.description_right }}</td>
+        </tr>
+    </table>
+    {{ research.content }}
 {% endfor %}
