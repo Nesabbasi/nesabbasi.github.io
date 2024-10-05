@@ -19,6 +19,7 @@ author_profile: true
     border-radius: 5px;
     font-weight: bold;
     font-size: 14px;
+    display: inline-block;
     transition: background-color 0.3s, color 0.3s;
   }
 
@@ -36,18 +37,20 @@ author_profile: true
     background-color: black;
     color: white;
   }
+
+  p {
+    text-align: justify;
+  }
 </style>
 
 {% for pub in site.publications %}
-<h2>{{ pub.title }}</h2>
-<p><em>Submitted to</em> {{ pub.submitted }}</p>
-<p><strong>Authors:</strong> {{ pub.authors }}</p>
-<p>{{ pub.excerpt }}</p>
+  <h2>{{ pub.title }}</h2>
+  <p><em>Submitted to</em> {{ pub.submitted }}</p>
+  <p><strong>Authors:</strong> {{ pub.authors }}</p>
+  <p>{{ pub.excerpt }}</p>
 
-<div class="btn-container">
-  <a href="{{ pub.paperurl | escape }}" class="btn" target="_blank">arXiv</a>
-  <a href="{{ pub.codeurl | escape }}" class="btn btn-secondary" target="_blank"
-    >Code</a
-  >
-</div>
+  <div class="btn-container">
+    <a href="{{ pub.paperurl | escape }}" class="btn" target="_blank">arXiv</a>
+    <a href="{{ pub.codeurl | escape }}" class="btn btn-secondary" target="_blank">Code</a>
+  </div>
 {% endfor %}
