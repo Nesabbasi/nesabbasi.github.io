@@ -1,5 +1,4 @@
 ---
-permalink: /publications/
 title: "Publications"
 author_profile: true
 ---
@@ -12,34 +11,41 @@ author_profile: true
   }
 
   .btn {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
+    padding: 8px 16px;
+    background-color: white;
+    color: black;
     text-decoration: none;
+    border: 2px solid black;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
   }
 
   .btn:hover {
-    background-color: #0056b3;
+    background-color: black;
+    color: white;
   }
 
   .btn-secondary {
-    background-color: #28a745;
+    background-color: white;
+    border: 2px solid black;
   }
 
   .btn-secondary:hover {
-    background-color: #218838;
+    background-color: black;
+    color: white;
   }
 </style>
 
-<h2>{{ page.title }}</h2>
-<p><strong>Submitted:</strong> {{ page.submitted }}</p>
-<p><strong>Authors:</strong> {{ page.authors }}</p>
-<p>{{ page.excerpt }}</p>
+{% for pub in site.publications %}
+  <h2>{{ pub.title }}</h2>
+  <p><strong>Submitted:</strong> {{ pub.submitted }}</p>
+  <p><strong>Authors:</strong> {{ pub.authors }}</p>
+  <p>{{ pub.excerpt }}</p>
 
-<div class="btn-container">
-  <a href="{{ page.paperurl }}" class="btn" target="_blank">Read Paper on arXiv</a>
-  <a href="{{ page.codeurl }}" class="btn btn-secondary" target="_blank">View Code on GitHub</a>
-</div>
-
+  <div class="btn-container">
+    <a href="{{ pub.paperurl }}" class="btn" target="_blank">arXiv</a>
+    <a href="{{ pub.codeurl }}" class="btn btn-secondary" target="_blank">Code</a>
+  </div>
+{% endfor %}
