@@ -6,7 +6,7 @@ instructor_url: "#"
 details: "Worked as a homework designer and grader."
 ---
 
----
+<!-- ---
 title: "Data Structure and Algorithm"
 semesters: "Fall 2022"
 instructor: "Prof. H. Faili"
@@ -60,4 +60,4 @@ semesters: "Summer 2023"
 instructor: "Summer of Code - ACM Student Chapter"
 instructor_url: "#"
 details: "Organized coding workshops and assisted students with projects."
----
+--- -->

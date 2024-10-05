@@ -1,34 +1,41 @@
-<style>
-  table {
-    border-collapse: collapse;
-    border: none;
-    font-size: medium;
-    margin-top: 0px;
-  }
-  
-  td, th {
-    border: none;
-    padding: 0;
-  }
-  
-  h2 {
-    margin-bottom: 0px;
-  }
-  
-  figure img {
-    margin-bottom: 0.5px;
-  }
-  </style>
-  
-  <h2>{{ page.title }}</h2>
-  
+---
+permalink: /publication/
+title: "Publications"
+author_profile: true
+---
+
+<style>   
+table {
+  border-collapse: collapse;
+  border: none;
+  font-size: medium;
+  margin-top: 0px;
+}
+
+td, th {
+  border: none;
+  padding: 0;
+}
+
+h2 {
+  margin-bottom: 0px;
+}
+
+figure img {
+  margin-bottom: 0.5px;
+}
+</style>
+
+{% for pub in site.publications %}
+  <h2>{{ pub.title }}</h2>
   <table border="0">
-    <tr>
-      <td align="left"><strong>Date:</strong> {{ page.date }}</td>
-      <td align="right"><strong>Venue:</strong> <a href="{{ page.paperurl }}" target="_blank">{{ page.venue }}</a></td>
-    </tr>
+      <tr>
+          <td align="left"><strong>Date:</strong> {{ pub.date }}</td>
+          <td align="right"><strong>Venue:</strong> <a href="{{ pub.paperurl }}" target="_blank">{{ pub.venue }}</a></td>
+      </tr>
   </table>
-  
-  <p>{{ page.excerpt }}</p>
-  
-  <p><strong>Paper URL:</strong> <a href="{{ page.paperurl }}" target="_blank">{{ page.paperurl }}</a></p>
+  <div style="text-align: justify;">
+    {{ pub.excerpt }}
+  </div>
+  <p><strong>Paper URL:</strong> <a href="{{ pub.paperurl }}" target="_blank">{{ pub.paperurl }}</a></p>
+{% endfor %}
