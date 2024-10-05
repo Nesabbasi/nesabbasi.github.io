@@ -1,12 +1,39 @@
 ---
 layout: archive
-title: "Teaching"
+title: "Teaching Assistant Experience"
 permalink: /teaching/
 author_profile: true
 ---
 
-{% include base_path %}
+<style>   
+table {
+  border-collapse: collapse;
+  border: none;
+  font-size: medium;
+  margin-top: 0px;
+}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+td, th {
+  border: none;
+  padding: 0;
+}
+
+h2 {
+  margin-bottom: 0px;
+}
+
+figure img {
+  margin-bottom: 0.5px;
+}
+</style>
+
+{% for course in site.courses %}
+  <h2>{{ course.title }}</h2>
+  <table border="0">
+      <tr>
+          <td align="left">{{ course.semesters }}</td>
+          <td align="right">Instructor: <a href="{{ course.instructor_url }}">{{ course.instructor }}</a></td>
+      </tr>
+  </table>
+  {{ course.details }}
 {% endfor %}
