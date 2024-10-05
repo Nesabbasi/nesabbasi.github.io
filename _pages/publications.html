@@ -1,6 +1,5 @@
 ---
 permalink: /publications/
-title: "Publications"
 author_profile: true
 ---
 
@@ -40,13 +39,15 @@ author_profile: true
 </style>
 
 {% for pub in site.publications %}
-  <h2>{{ pub.title }}</h2>
-  <p><strong>Submitted:</strong> {{ pub.submitted }}</p>
-  <p><strong>Authors:</strong> {{ pub.authors }}</p>
-  <p>{{ pub.excerpt }}</p>
+<h2>{{ pub.title }}</h2>
+<p><em>Submitted to</em> {{ pub.submitted }}</p>
+<p><strong>Authors:</strong> {{ pub.authors }}</p>
+<p>{{ pub.excerpt }}</p>
 
-  <div class="btn-container">
-    <a href="{{ pub.paperurl }}" class="btn" target="_blank">arXiv</a>
-    <a href="{{ pub.codeurl }}" class="btn btn-secondary" target="_blank">Code</a>
-  </div>
+<div class="btn-container">
+  <a href="{{ pub.paperurl | escape }}" class="btn" target="_blank">arXiv</a>
+  <a href="{{ pub.codeurl | escape }}" class="btn btn-secondary" target="_blank"
+    >Code</a
+  >
+</div>
 {% endfor %}
