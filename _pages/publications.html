@@ -18,61 +18,48 @@ author_profile: true
   }
 
   .link {
-    padding: 8px 12px; /* Smaller padding for a compact look */
-    background-color: #f0f0f0; /* Light grey background */
-    color: #333; /* Dark text color */
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent; /* Left triangle edge */
+    border-right: 30px solid transparent; /* Right triangle edge */
+    border-bottom: 50px solid #f0f0f0; /* Bottom triangle edge, sets color */
     text-decoration: none;
-    border-radius: 20px; /* Rounded edges */
-    font-weight: bold;
-    border: 1px solid #ccc; /* Light border color */
-    font-size: 14px; /* Smaller font size */
-    transition: all 0.3s; /* Smooth transition for hover effects */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    margin-right: 10px; /* Space between links */
+    position: relative;
+    margin-right: 20px;
+    cursor: pointer;
   }
 
   .link:hover {
-    background-color: #007BFF; /* Bright blue on hover */
-    color: white; /* White text color on hover */
-    border-color: #0056b3; /* Darker border color on hover */
-    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    border-bottom-color: #007BFF; /* Change triangle color on hover */
+    cursor: pointer; /* Show pointer on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    transition: all 0.3s; /* Smooth hover transition */
   }
 
-  .abstract-modal {
+  /* Text inside the triangle */
+  .link-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .link:hover .link-text {
+    color: white; /* Change text color on hover */
+  }
+
+  /* Styles for the abstract box */
+  .abstract-box {
     display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1000; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
-    padding-top: 60px; /* Place the modal content 60px from the top */
-  }
-
-  .modal-content {
-    background-color: #fff; /* White background for the modal */
-    margin: 15% auto; /* 15% from the top and centered */
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
     padding: 20px;
-    border: 1px solid #888; /* Border color for the modal */
-    width: 80%; /* Width of modal */
-    border-radius: 10px; /* Rounded edges for the modal */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for modal */
-  }
-
-  .close {
-    color: #aaa; /* Close button color */
-    float: right; /* Float right */
-    font-size: 28px; /* Size of close button */
-    font-weight: bold; /* Bold font */
-  }
-
-  .close:hover,
-  .close:focus {
-    color: black; /* Change color on hover */
-    text-decoration: none; /* No underline */
-    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 10px;
+    width: 90%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 
   p {
@@ -88,36 +75,24 @@ author_profile: true
   <!-- <p>{{ pub.excerpt }}</p> -->
 
   <div class="link-container">
-    <a href="{{ pub.paperurl }}" class="link" target="_blank">PDF</a>
-    <a href="{{ pub.codeurl }}" class="link" target="_blank">CODE</a>
-    <a href="javascript:void(0);" class="link" onclick="showAbstract('{{ pub.abstract }}')">Abstract</a>
+    <a href="{{ pub.paperurl }}" class="link" target="_blank"><span class="link-text">PDF</span></a>
+    <a href="{{ pub.codeurl }}" class="link" target="_blank"><span class="link-text">CODE</span></a>
+    <a href="javascript:void(0);" class="link" onclick="toggleAbstract('{{ pub.abstract }}', this)"><span class="link-text">Abstract</span></a>
   </div>
+
+  <!-- Abstract box, hidden by default -->
+  <div class="abstract-box"></div>
 {% endfor %}
 
-<!-- The Modal -->
-<div id="abstractModal" class="abstract-modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <h2>Abstract</h2>
-    <p id="abstractText"></p>
-  </div>
-</div>
-
 <script>
-  function showAbstract(abstract) {
-    document.getElementById('abstractText').innerText = abstract;
-    document.getElementById('abstractModal').style.display = "block";
-  }
+  function toggleAbstract(abstract, element) {
+    const abstractBox = element.parentNode.nextElementSibling;
 
-  function closeModal() {
-    document.getElementById('abstractModal').style.display = "none";
-  }
-
-  // Close the modal when clicking anywhere outside of it
-  window.onclick = function(event) {
-    var modal = document.getElementById('abstractModal');
-    if (event.target == modal) {
-      modal.style.display = "none";
+    if (abstractBox.style.display === "none" || abstractBox.style.display === "") {
+      abstractBox.style.display = "block";
+      abstractBox.innerHTML = `<p>${abstract}</p>`;
+    } else {
+      abstractBox.style.display = "none";
     }
   }
 </script>

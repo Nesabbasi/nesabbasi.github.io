@@ -220,6 +220,9 @@ collections:
   about:
     output: true
     permalink: /:collection/:path/
+  teaching:
+    output: true
+    permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
