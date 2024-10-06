@@ -34,13 +34,13 @@ author_profile: true
 </style>
 
 {% for pub in site.publications %}
-  <h2>{{ pub.title }}</h2>
-  <p><strong>Authors:</strong> {{ pub.authors }}</p>
-  <p><em>Submitted to {{ pub.submitted }}</em></p>
-  <p>{{ pub.excerpt }}</p>
+<h2>{{ pub.title }}</h2>
+<div class="btn-container">
+  <a href="{{ pub.paperurl }}" class="btn" target="_blank">PDF</a>
+  <a href="{{ pub.codeurl }}" class="btn" target="_blank">CODE</a>
+</div>
+<p><strong>Authors:</strong> {{ pub.authors }}</p>
+<p><em>Submitted to {{ pub.submitted }}</em></p>
+<p>{{ pub.excerpt }}</p>
 
-  <div class="btn-container">
-    <a href="{{ pub.paperurl }}" class="btn" target="_blank">PDF</a>
-    <a href="{{ pub.codeurl }}" class="btn" target="_blank">CODE</a>
-  </div>
 {% endfor %}
