@@ -14,9 +14,9 @@ author_profile: true
   .btn {
     padding: 6px 14px;
     background-color: transparent;
-    color: black;
+    color: rgb(9, 33, 215);
     text-decoration: none;
-    border: 1px solid black;
+    border: 1px solid rgb(233, 27, 27);
     border-radius: 5px;
     font-weight: bold;
     font-size: 14px;
@@ -35,8 +35,8 @@ author_profile: true
 
 {% for pub in site.publications %}
   <h2>{{ pub.title }}</h2>
-  <p><strong>Authors:</strong> {{ pub.authors }}</p>
   <p><em>Submitted to {{ pub.submitted }}</em></p>
+  <p><strong>Authors:</strong> {{ pub.authors }}</p>
   <p>{{ pub.excerpt }}</p>
 
   <div class="btn-container">
