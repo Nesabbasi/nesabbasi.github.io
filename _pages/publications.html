@@ -19,7 +19,7 @@ author_profile: true
 
   .link {
     padding: 10px 20px; /* Padding for rectangular buttons */
-    background-color: #f0f0f0; /* Light grey background */
+    background-color: #ffffff; /* Light grey background */
     color: #333; /* Dark text color */
     text-decoration: none;
     border-radius: 5px; /* Slightly rounded edges */
@@ -32,9 +32,9 @@ author_profile: true
   }
 
   .link:hover {
-    background-color: #007BFF; /* Bright blue on hover */
+    background-color: #f0f0f0; /* Bright blue on hover */
     color: white; /* White text color on hover */
-    border-color: #0056b3; /* Darker border color on hover */
+    border-color: #9e9e9e; /* Darker border color on hover */
     transform: scale(1.05); /* Slightly enlarge the button on hover */
     cursor: pointer; /* Pointer cursor on hover */
   }
@@ -63,9 +63,9 @@ author_profile: true
   <!-- <p>{{ pub.excerpt }}</p> -->
 
   <div class="link-container">
-    <a href="{{ pub.paperurl }}" class="link" target="_blank">PDF</a>
+    <a href="{{ pub.paperurl }}" class="link" target="_blank">arXiv</a>
     <a href="{{ pub.codeurl }}" class="link" target="_blank">CODE</a>
-    <a href="javascript:void(0);" class="link" onclick="toggleAbstract('{{ pub.abstract }}', this)">Abstract</a>
+    <a href="javascript:void(0);" class="link" onclick="toggleAbstract('{{ pub.abstract }}', this)">ABS</a>
   </div>
 
   <!-- Abstract box, hidden by default -->
