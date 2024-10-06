@@ -18,37 +18,25 @@ author_profile: true
   }
 
   .link {
-    width: 0;
-    height: 0;
-    border-left: 30px solid transparent; /* Left triangle edge */
-    border-right: 30px solid transparent; /* Right triangle edge */
-    border-bottom: 50px solid #f0f0f0; /* Bottom triangle edge, sets color */
+    padding: 10px 20px; /* Padding for rectangular buttons */
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333; /* Dark text color */
     text-decoration: none;
-    position: relative;
-    margin-right: 20px;
-    cursor: pointer;
+    border-radius: 5px; /* Slightly rounded edges */
+    font-weight: bold;
+    border: 1px solid #ccc; /* Light border color */
+    font-size: 14px; /* Font size for buttons */
+    transition: all 0.3s; /* Smooth transition for hover effects */
+    margin-right: 10px; /* Space between buttons */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for 3D effect */
   }
 
   .link:hover {
-    border-bottom-color: #007BFF; /* Change triangle color on hover */
-    cursor: pointer; /* Show pointer on hover */
-    transform: scale(1.1); /* Slightly enlarge on hover */
-    transition: all 0.3s; /* Smooth hover transition */
-  }
-
-  /* Text inside the triangle */
-  .link-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #333;
-    font-weight: bold;
-    font-size: 12px;
-  }
-
-  .link:hover .link-text {
-    color: white; /* Change text color on hover */
+    background-color: #007BFF; /* Bright blue on hover */
+    color: white; /* White text color on hover */
+    border-color: #0056b3; /* Darker border color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    cursor: pointer; /* Pointer cursor on hover */
   }
 
   /* Styles for the abstract box */
@@ -75,9 +63,9 @@ author_profile: true
   <!-- <p>{{ pub.excerpt }}</p> -->
 
   <div class="link-container">
-    <a href="{{ pub.paperurl }}" class="link" target="_blank"><span class="link-text">PDF</span></a>
-    <a href="{{ pub.codeurl }}" class="link" target="_blank"><span class="link-text">CODE</span></a>
-    <a href="javascript:void(0);" class="link" onclick="toggleAbstract('{{ pub.abstract }}', this)"><span class="link-text">Abstract</span></a>
+    <a href="{{ pub.paperurl }}" class="link" target="_blank">PDF</a>
+    <a href="{{ pub.codeurl }}" class="link" target="_blank">CODE</a>
+    <a href="javascript:void(0);" class="link" onclick="toggleAbstract('{{ pub.abstract }}', this)">Abstract</a>
   </div>
 
   <!-- Abstract box, hidden by default -->
