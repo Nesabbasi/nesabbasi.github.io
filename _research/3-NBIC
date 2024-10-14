@@ -1,0 +1,10 @@
+---
+title: "Convergent Technologies Research Institute (NBIC)"
+collection: research
+description_left: "Research Intern"
+description_right: "Jun 2023 - Aug 2023"
+---
+
+<div style="text-align: justify;">
+I was a research intern at the Convergent Technologies Research Institute (NBIC) at the University of Tehran under the supervision of <a href="https://scholar.google.com/citations?hl=en&user=TvGqaqAAAAAJ&view_op=list_works&sortby=pubdate">Prof. Y. Yaghoobzadeh</a> and <a href="https://scholar.google.com/citations?user=HuMGDxIAAAAJ&hl=en">Prof. M. Abolghasemi Dehaqani</a>. My research focused on developing a mobile app for early autism detection in children, leveraging interactive games to analyze both facial expressions and speech patterns. Additionally, I enhanced the user interface using React and evaluated advanced speech-to-text models, such as Meta’s SeamlessM4T and Google’s Speech-to-Text, specifically for Persian language processing.
+</div>
