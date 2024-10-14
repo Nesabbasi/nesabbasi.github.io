@@ -62,12 +62,12 @@ Developed a mobile app for early autism detection in children.
 - Machine Learning (Summer 2023)
 
 ## Projects
-- **[Cyber-Physical Systems Course Projects](https://github.com/Nesabbasi/CPS_Course_Projects)** | C++, QML, QT
-- **[Software Testing Course Projects](https://github.com/Nesabbasi/Software-Testing-Course-Projects)** | JUnit, Java
-- **[Distributed Systems Course Projects](https://github.com/Nesabbasi/Distributed-Computing-Course-Projects)** | Go
-- **[LogicPL Compiler](https://github.com/Nesabbasi/LogicPL-Compiler)** | Java
-- **[Operating System Course Projects](https://github.com/Nesabbasi/Operating-Systems)** | C++, C
-- **[Operating System Lab Projects](https://github.com/Nesabbasi/os-lab-xv6)** | C
+- **[Cyber-Physical Systems Course Projects](https://github.com/Nesabbasi/CPS_Course_Projects)**
+- **[Software Testing Course Projects](https://github.com/Nesabbasi/Software-Testing-Course-Projects)**
+- **[Distributed Systems Course Projects](https://github.com/Nesabbasi/Distributed-Computing-Course-Projects)**
+- **[LogicPL Compiler](https://github.com/Nesabbasi/LogicPL-Compiler)**
+- **[Operating System Course Projects](https://github.com/Nesabbasi/Operating-Systems)**
+- **[Operating System Lab Projects](https://github.com/Nesabbasi/os-lab-xv6)**
 
 ## Technical Skills
 - **Programming Languages**: Python, C/C++, Java, Go, R, NoSQL/SQL, MATLAB, HTML/CSS, Verilog, VHDL, LaTeX
