@@ -7,8 +7,6 @@ redirect_from:
   - /resume
 ---
 
-# Nesa Abbasimoghadam
-
 To download my CV click [here](/files/CV.pdf).
 
 ## Research Interests
