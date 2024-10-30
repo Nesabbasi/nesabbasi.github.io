@@ -14,7 +14,6 @@ To download my CV click [here](/files/CV.pdf).
 - Software Verification
 - Programming Languages
 - Cyber-Physical Systems
-- Distributed Systems
 
 ## Education
 **University of Tehran** (Sep. 2020 – Feb. 2024)  
@@ -26,6 +25,7 @@ Diploma in Mathematics and Physics — GPA: 19.66/20 (4/4) | Tehran, Iran
 ## Publications
 - **Hybrid Rebeca Reachability Analysis** (2024)  
   *Manuscript*  
+   S. Zhiany, F. Ghassemi, N. Abbasimoghadam, A. Hodaei, A. Ataollahi, M. Sirjani
 
 - **[Benchmarking Large Language Models for Persian: A Preliminary Study Focusing on ChatGPT](https://arxiv.org/abs/2404.02403)** (2023)  
   *Accepted in [LREC-COLING 2024](https://lrec-coling-2024.org/): The 2024 Joint International Conference on Computational Linguistics, Language Resources, and Evaluation*  
