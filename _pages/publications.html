@@ -58,7 +58,11 @@ author_profile: true
 
 {% for pub in site.publications %}
   <h2>{{ pub.title }}</h2>
-  <p><em>Submitted to {{ pub.submitted }}</em></p>
+  
+  {% if pub.submitted %}
+    <p><em>Submitted to {{ pub.submitted }}</em></p>
+  {% endif %}
+  
   <p><strong>Authors:</strong> {{ pub.authors }}</p>
 
   <div class="link-container">
@@ -83,3 +87,4 @@ author_profile: true
     }
   }
 </script>
+
