@@ -25,7 +25,7 @@ Bachelor of Science in Computer (Software) Engineering — GPA: 18.26/20 (3.95/4
 Diploma in Mathematics and Physics — GPA: 19.66/20 (4/4) | Tehran, Iran
 
 ## Publications
-- **Hybrid Rebeca Reachability Analysis** (2024)  
+- **[Hybrid Rebeca Reachability Analysis](https://arxiv.org/abs/2411.03160)** (2024)  
   *Manuscript*  
    S. Zhiany, F. Ghassemi, N. Abbasimoghadam, A. Hodaei, A. Ataollahi, M. Sirjani
 
