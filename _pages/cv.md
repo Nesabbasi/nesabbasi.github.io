@@ -26,7 +26,7 @@ Diploma in Mathematics and Physics — GPA: 19.66/20 (4/4) | Tehran, Iran
 
 ## Publications
 - **[Hybrid Rebeca Reachability Analysis](https://arxiv.org/abs/2411.03160)** (2024)  
-  *Manuscript*  
+  *Under Preparation*  
    S. Zhiany, F. Ghassemi, N. Abbasimoghadam, A. Hodaei, A. Ataollahi, M. Sirjani
 
 - **[Benchmarking Large Language Models for Persian: A Preliminary Study Focusing on ChatGPT](https://arxiv.org/abs/2404.02403)** (2023)  
@@ -42,7 +42,7 @@ Diploma in Mathematics and Physics — GPA: 19.66/20 (4/4) | Tehran, Iran
 ### Formal Methods and Validation of Systems Lab  
 **University of Tehran** (Sep. 2023 – Present) | *Supervisor: Prof. F. Ghassemi*  
 Research focus: Verification of asynchronous, event-based Cyber-Physical Systems using advanced model-checking techniques.  
-[Repository](https://github.com/SaeedZhiany/HybridRebecaReachabilityAnalysis)
+[Repository](https://github.com/SaeedZhiany/HybridRebecaReachabilityAnalysis/tree/feature/duplicate-state)
 
 ### Natural Language Processing Lab  
 **University of Tehran** (Mar. 2023 – Oct. 2023) | *Supervisor: Prof. Y. Yaghoobzadeh*  
