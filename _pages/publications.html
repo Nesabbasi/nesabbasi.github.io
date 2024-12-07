@@ -59,9 +59,13 @@ author_profile: true
 {% for pub in site.publications %}
   <h2>{{ pub.title }}</h2>
   
-  {% if pub.submitted %}
-    <p><em>Submitted to {{ pub.submitted }}</em></p>
+  {% if pub.accepted %}
+    <p><em>Accepted in {{ pub.accepted }}</em></p>
   {% endif %}
+
+  {% if pub.submitted %}
+  <p><em>To be submitted to {{ pub.submitted }}</em></p>
+{% endif %}
   
   <p><strong>Authors:</strong> {{ pub.authors }}</p>
 

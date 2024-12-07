@@ -1,6 +1,6 @@
 ---
 title: "Benchmarking Large Language Models for Persian: A Preliminary Study Focusing on ChatGPT"
-submitted: "LREC-COLING 2024, Apr 2024"
+accepted: "LREC-COLING 2024, Apr 2024"
 paperurl: "https://arxiv.org/abs/2404.02403"
 codeurl: "https://github.com/Nesabbasi/Benchmarking_ChatGPT_for_Persian"
 authors: "Amirhossein Abaskohi, Sara Baruni, Mostafa Masoudi, and Mohammad Hadi Babalou, Nesa Abbasimoghadam, Ali Edalat, Sepehr Kamahi, Samin Mahdizadeh Sani, Nikoo Naghavian, Danial Namazifard, Pouya Sadeghi, Yadollah Yaghoobzadeh"
