@@ -26,7 +26,8 @@ Diploma in Mathematics and Physics — GPA: 19.66/20 (4/4) | Tehran, Iran
 
 ## Publications
 - **[Hybrid Rebeca Reachability Analysis](https://arxiv.org/abs/2411.03160)** (2024)  
-  *To be submitted to [NFM 2025](https://shemesh.larc.nasa.gov/nfm2025/)*  
+  <!-- *To be submitted to [NFM 2025](https://shemesh.larc.nasa.gov/nfm2025/)*   -->
+  *Under Preparation*
    S. Zhiany, F. Ghassemi, N. Abbasimoghadam, A. Hodaei, A. Ataollahi, M. Sirjani
 
 - **[Benchmarking Large Language Models for Persian: A Preliminary Study Focusing on ChatGPT](https://arxiv.org/abs/2404.02403)** (2023)  
