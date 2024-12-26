@@ -9,7 +9,7 @@ redirect_from:
 
 To download my CV click [here](/files/CV.pdf).
 
-To download my transcript click [here](/files/Transcript.pdf).
+<!-- To download my transcript click [here](/files/Transcript.pdf). -->
 
 ## Research Interests
 - Formal Methods
